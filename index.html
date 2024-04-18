@@ -30,36 +30,18 @@
         
      const renderer = {
         type: "simple",
-        field: "mag",
         symbol: {
           type: "simple-marker",
           color: "green",
           outline: {
             color: "white"
           }
-        },
-        visualVariables: [{
-          type: "size",
-          field: "mag",
-          stops: [{
-              value: 2.5,
-              size: "4px"
-            },
-            {
-              value: 8,
-              size: "40px"
-            }
-          ]
-        }]
-      };
+        });
         
 const geojsonLayer = new GeoJSONLayer({
   url: Cities2.geojson, //https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson
   copyright: "Jade",
   renderer: renderer,  
-  orderBy: {
-          field: "mag"
-        }
 });
 
         var view = new MapView({
