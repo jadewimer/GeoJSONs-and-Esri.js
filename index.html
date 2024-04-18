@@ -27,6 +27,11 @@
         var map = new Map({
           basemap: "satellite"  // Change to a valid basemap
         });
+        
+const geojsonLayer = new GeoJSONLayer({
+  url: https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson,
+  copyright: "Jade"
+});
 
         var view = new MapView({
           container: "viewDiv",
