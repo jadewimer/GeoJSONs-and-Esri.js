@@ -37,7 +37,8 @@ const geojsonLayer = new GeoJSONLayer({
           container: "viewDiv",
           map: map,
           zoom: 4,
-          center: [0, 0]
+          center: [0, 0],
+          layers: [geojsonLayer]
         });
       });
     </script>
@@ -45,7 +46,6 @@ const geojsonLayer = new GeoJSONLayer({
   </head>
   <body>
     <div id="viewDiv">
-    layers: [geojsonLayer]
     </div>
   </body>
 </html>
