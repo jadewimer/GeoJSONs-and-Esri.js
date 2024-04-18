@@ -29,7 +29,7 @@
         });
         
 const geojsonLayer = new GeoJSONLayer({
-  url: https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson,
+  url: Cities2.geojson, //https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson
   copyright: "Jade"
 });
 
@@ -38,13 +38,14 @@ const geojsonLayer = new GeoJSONLayer({
           map: map,
           zoom: 4,
           center: [0, 0]
-          layers: [geojsonLayer]
         });
       });
     </script>
 
   </head>
   <body>
-    <div id="viewDiv"></div>
+    <div id="viewDiv">
+    layers: [geojsonLayer]
+    </div>
   </body>
 </html>
