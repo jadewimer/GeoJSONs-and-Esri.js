@@ -41,10 +41,11 @@ const renderer = {
 
         
 const geojsonLayer = new GeoJSONLayer({
-  url: Cities2.geojson, //https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson
+  url: "https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson", // Enclosed in quotes
   copyright: "Jade",
-  renderer: renderer,  
+  renderer: renderer  
 });
+
 
         var view = new MapView({
           container: "viewDiv",
