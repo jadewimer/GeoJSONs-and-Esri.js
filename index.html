@@ -28,15 +28,17 @@
           basemap: "satellite"  // Change to a valid basemap
         });
         
-     const renderer = {
-        type: "simple",
-        symbol: {
-          type: "simple-marker",
-          color: "green",
-          outline: {
-            color: "white"
-          }
-        });
+const renderer = {
+  type: "simple",
+  symbol: {
+    type: "simple-marker",
+    color: "green",
+    outline: {
+      color: "white"
+    }
+  }
+};
+
         
 const geojsonLayer = new GeoJSONLayer({
   url: Cities2.geojson, //https://jadewimer.github.io/GeoJSONs-and-Esri.js/Cities2.geojson
